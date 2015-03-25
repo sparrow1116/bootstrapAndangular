@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test scroll</title>
+    <style>
+        .left{
+            position: absolute;
+            width: 400px;
+            height: 500px;
+            background: red;
+            top:0px;
+        }
+        .center{
+            position: absolute;
+            left:500px;
+            width: 400px;
+            height: 1500px;
+            background: green;
+            top:0px;
+        }
+        .right{
+            position: absolute;
+            width: 400px;
+            height: 500px;
+            left:1000px;
+            background: yellow;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+<div class="left"></div>
+<div class="center"></div>
+<div class="right"></div>
+</body>
+<script>
+    var left = document.getElementsByClassName('left')[0];
+
+    window.onscroll= function(){
+        var s_top = document.documentElement.scrollTop || document.body.scrollTop;
+        left.style.top = s_top+'px';
+        console.log('>>>>>>>>>>'+s_top);
+    }
+</script>
+</html>

@@ -10,76 +10,175 @@
         .trademark{
 
         }
+        .navbar-inner{
+
+            min-height: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #50a8dc;
+            background-image: -moz-linear-gradient(top, #61b0df, #369bd7);
+            background-image: -ms-linear-gradient(top, #61b0df, #369bd7);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#61b0df), to(#369bd7));
+            background-image: -webkit-linear-gradient(top, #61b0df, #369bd7);
+            background-image: -o-linear-gradient(top, #61b0df, #369bd7);
+            background-image: linear-gradient(top, #61b0df, #369bd7);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#61b0df', endColorstr='#369bd7', GradientType=0);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+        }
+
+        @font-face {
+            font-family: 'Glyphicons Halflings';
+            src: url('fonts/glyphicons-halflings-regular.eot');
+            src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+                 url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+                 url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+        }
+
+        .title{
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            -webkit-font-smoothing: antialiased;
+            font-size: 66px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        .btn-main-box{
+            width:200px;
+        }
+        .thumbnail-class{
+            width: 150px;
+            height: 100px;
+        }
+        .panel-head-text{
+            text-align:center;;
+        }
+        .panel-body-center{
+            margin: 0 auto;
+        }
+        #titleHome{
+            text-decoration:none;
+        }
 
     </style>
+
+    <link href="css/switch.picture.css" rel="stylesheet">
+
+
+    <link href="css/bootstrap-theme.css" rel='stylesheet'>
+    <link href="css/bootstrap-cerulean.css" rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel='stylesheet'>
-    <link href="css/bootstrap-theme.min.css" rel='stylesheet'>
 </head>
 <body>
 
 <div class="container">
-    <div class="panel panel-primary">
-        <div class="row">
-            <div class="col-md-8" >
-                <a id="titleHome" href="#">南京菜哥</a>
+    <nav class="navbar navbar-default">
+        <div class="navbar-inner">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 title" >
+                    <a id="titleHome">天天送菜</a>
+                </div>
+                <div class="col-md-4">
+                    <ol class="breadcrumb">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li class="active">购物车</li>
+                        <li><a href="#">自选提货地点</a></li>
+                    </ol>
+                    <ul class="nav nav-pills navbar-right">
+                        <li role="presentation" class="active"><a href="#">开始订餐</a></li>
+                        <li role="presentation"><a href="#">查看订单</a></li>
+                        <li role="presentation"><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-4">
-                <ol class="breadcrumb">
-                    <li><a href="#">登录</a></li>
-                    <li><a href="#">注册</a></li>
-                    <li class="active">购物车</li>
-                    <li><a href="#">自选提货地点</a></li>
-                </ol>
-                <ul class="nav nav-pills nav-justified">
-                    <li role="presentation" class="active"><a href="#">开始订餐</a></li>
-                    <li role="presentation"><a href="#">查看订单</a></li>
-                    <li role="presentation"><a href="#">帮助中心</a></li>
-                </ul>
-            </div>
+        </div><!-- /.container-fluid -->
         </div>
-    </div>
+    </nav>
 </div>
-
-
 
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="panel panel-primary">
-                <a class="trademark" href="#">pictureSwitch</a>
-            </div>
+            <!--Switch picture block-->
+            <ul id="slideShow">
+            </ul>
+            <!--<div class="panel panel-primary">               -->
+                <!--<a class="trademark" href="#">pictureSwitch</a>-->
+            <!--</div>-->
             <div class="row">
-                <div class="col-md-4">第一块</div>
-                <div class="col-md-4">第二块</div>
-                <div class="col-md-4">第三块</div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail thumbnail-class">
+                        前世今生
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail thumbnail-class">
+                        订菜指南
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail thumbnail-class">
+                        微信语录
+                    </a>
+                </div>
             </div>
 
         </div>
         <div class="col-md-4">
             <div class="row">
                 <div class="col-md-6">
-                    第一块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        今日菜谱
+                    </a>
+
                 </div>
                 <div class="col-md-6">
-                    第二块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        新品推荐
+                    </a>
+
                 </div>
                 <div class="col-md-6">
-                    第三块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        素菜
+                    </a>
+
                 </div>
                 <div class="col-md-6">
-                    第四块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        荤菜
+                    </a>
+
                 </div>
                 <div class="col-md-6">
-                    第五块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        肉菜
+                    </a>
+
                 </div>
                 <div class="col-md-6">
-                    第六块
+                    <a href="#" class="thumbnail thumbnail-class">
+                        汤羹
+                    </a>
+
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
+                <div class="panel-heading panel-head-text" >扫描下面二维码</div>
                 <div class="panel-body">
-                    Panel content
+                    <a href="#" class="thumbnail thumbnail-class panel-body-center panel-head-text">
+                        二维码
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,6 +186,11 @@
 </div>
 
 <script src="js/jQuery.js"></script>
+
+<script src="js/bgpos.js"></script>
+<script src="js/jquery.bubbleSlideshow.js"></script>
+<script src="js/switch.picture.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

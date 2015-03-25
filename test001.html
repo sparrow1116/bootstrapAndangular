@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+<div id="box" style="height:2000px;width:3000px;">
+
+    <div id="div1" style="width:500px;height:500px;background:green;position:absolute;">
+        <div id="div2" style="width:200px;height:100px;background:lightblue;position:fixed;">里面的div</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var sTop = 0;            //初始卷起的高度
+    var sLeft = 0;            //初始卷起的宽度
+    var p_div = document.getElementById("div1");        //父div
+    var max_x = p_div.offsetLeft+p_div.offsetWidth;        //父div的右边界
+    var max_y = p_div.offsetTop+p_div.offsetHeight;        //父div的下边界
+    window.onscroll = function(){
+        var c_div = document.getElementById("div2");    //子div
+        var s_top = document.documentElement.scrollTop || document.body.scrollTop;            //卷起的高度
+        var s_left = document.documentElement.scrollLeft || document.body.scrollLeft;        //卷起的宽度
+        if(s_top!=sTop){        //纵向滚动，当前卷起的高度和原卷起的高度不一致
+            sTop = s_top;
+            c_y = s_top+p_div.offsetTop+c_div.offsetHeight;            //子div当前的下边界坐标
+            if(c_y>=max_y){                //如果下边界超过父div下边界
+                c_div.style.position = "relative";
+                c_div.style.top = (p_div.offsetHeight-c_div.offsetHeight)+"px";
+                c_div.style.left = s_left+"px";
+            }else{
+                c_div.style.position = "fixed";
+                c_div.style.top = "";
+                c_div.style.left = "";
+            }
+        }
+        if(s_left!=sLeft){        //纵向滚动
+            sLeft = s_left;
+            c_x = s_left+p_div.offsetLeft+c_div.offsetWidth;
+            if(c_x>=max_x){
+                c_div.style.position = "relative";
+                c_div.style.left = (p_div.offsetWidth-c_div.offsetWidth)+"px";
+                c_div.style.top = s_top+"px";
+            }else{
+                c_div.style.position = "fixed";
+                c_div.style.left = "";
+                c_div.style.top = "";
+            }
+        }
+    }
+</script>
+</html>
