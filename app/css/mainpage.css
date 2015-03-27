@@ -1,0 +1,54 @@
+html,body{margin:0px;padding:0px;width:100%;height:100%}
+
+.navbar-inner{
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #50a8dc;
+    background-image: -moz-linear-gradient(top, #61b0df, #369bd7);
+    background-image: -ms-linear-gradient(top, #61b0df, #369bd7);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#61b0df), to(#369bd7));
+    background-image: -webkit-linear-gradient(top, #61b0df, #369bd7);
+    background-image: -o-linear-gradient(top, #61b0df, #369bd7);
+    background-image: linear-gradient(top, #61b0df, #369bd7);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#61b0df', endColorstr='#369bd7', GradientType=0);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.title{
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-size: 66px;
+    font-weight: bold;
+    line-height: 1;
+}
+.thumbnail-class{
+    width: 150px;
+    height: 100px;
+}
+.panel-head-text{
+    text-align:center;;
+}
+.panel-body-center{
+    margin: 0 auto;
+}
+#titleHome{
+    text-decoration:none;
+}
