@@ -15,7 +15,14 @@
 </head>
 <body>
 
-<div ui-view ></div>
+<div ui-view="topbar"></div>
+    <div class="container">
+        <div ui-view="left"></div>
+        <div ui-view="center"></div>
+        <div ui-view="right"></div>
+    </div>
+
+</div>
 
 
 <script src="framework/jQuery.js"></script>
@@ -25,9 +32,9 @@
 <script src="js/app.js"></script>
 <script src="framework/bootstrap.min.js"></script>
 
-<script src="framework/bgpos.js"></script>
-<script src="framework/switch.picture.js"></script>
-<script src="framework/jquery.bubbleSlideshow.js"></script>
+<!--<script src="framework/bgpos.js"></script>-->
+<!--<script src="framework/switch.picture.js"></script>-->
+<!--<script src="framework/jquery.bubbleSlideshow.js"></script>-->
 
 
 

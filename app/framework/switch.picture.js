@@ -11,10 +11,14 @@ $(function(){
         'img/6.jpg'
     ];
 
-    var slideshow = $('#slideShow').bubbleSlideshow(photos);
+
 
     $(window).load(function(){
-        slideshow.autoAdvance(5000);
+        setTimeout(function(){
+            var slideshow = $('#slideShow').bubbleSlideshow(photos);
+            slideshow.autoAdvance(1000);
+        },1000);
+
     });
 
     // Other valid method calls:
