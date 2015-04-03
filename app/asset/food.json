@@ -1,0 +1,94 @@
+{
+    "foods":[
+        {
+            "id": 1,
+            "name": "红烧肉",
+            "type":["荤菜",
+                "肉菜",
+                "新品推荐"],
+            "disp":"大肉",
+            "price":"20",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/1.png"
+
+        },{
+            "id": 2,
+            "name": "红烧排骨",
+            "type":["荤菜",
+                "新品推荐"],
+            "disp":"排骨",
+            "price":"20",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/2.png"
+        },{
+            "id": 3,
+            "name": "蒜苗炒肉",
+            "type":["荤菜",
+                "新品推荐"],
+            "disp":"小炒肉",
+            "price":"18",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/3.png"
+        },{
+            "id": 4,
+            "name": "青椒香干",
+            "type":["素菜"],
+            "disp":"很好吃",
+            "price":"15",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/4.png"
+        },{
+            "id": 5,
+            "name": "青菜苔",
+            "type":["素菜"],
+            "disp":"非常好吃",
+            "price":"15",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/5.png"
+        },{
+            "id": 6,
+            "name": "西红柿蛋汤",
+            "type":["汤类",
+                    "新品推荐"],
+            "disp":"好喝",
+            "price":"15",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/6.png"
+        },{
+            "id": 7,
+            "name": "紫菜蛋汤",
+            "type":["汤类"],
+            "disp":"也就那样吧",
+            "price":"15",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/7.png"
+        },{
+            "id": 8,
+            "name": "豆角炒肉",
+            "type":["肉菜",
+                    "素菜"],
+            "disp":"还行，还行",
+            "price":"15",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/8.png"
+        },{
+            "id": 9,
+            "name": "清蒸鲈鱼",
+            "type":["新品推荐",
+                "荤菜"],
+            "disp":"非常非常好吃",
+            "price":"25",
+            "weight":"500g",
+            "origin":"南京",
+            "image":"img/food/9.png"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<div class="col-md-6">
+    <div class="page-header" id="page-head-self">
+        <ol class=" breadcrumb" id="head-nav-position">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">开始订餐</a></li>
+        </ol>
+        <div class="panel-body" id="head-nav-content-position">
+            排序：
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>价格
+            </button>
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>销量
+            </button>
+        </div>
+    </div>
+    <!-- page head end-->
+
+    <!--page list-->
+    <div class="row" data-ng-controller="dispFood">
+
+        <div class="col-md-6" data-ng-repeat="food in foods">
+            <div class="food-container">
+                <a href="#" class="thumbnail food-pic">
+                    <img src={{food.image}}/>
+                </a>
+                <p class="food-name">{{food.name}}</p>
+                <p class="food-dicription">{{food.disp}}</p>
+                <p class="weight">规格:{{food.weight}}</p>
+                <p class="origin">产地:{{food.origin}}</p>
+                <p class="price">{{food.price | currency:'￥' }}</p>
+            </div>
+        </div>
+
+    <!--分页-->
+        <div class="col-md-12">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+</div>
+</div>

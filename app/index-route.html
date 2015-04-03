@@ -14,8 +14,8 @@
 
 </head>
 <body>
-
 <div class="container">
+
     <nav class="navbar navbar-default">
         <div class="navbar-inner">
 
@@ -26,15 +26,15 @@
                     </div>
                     <div class="col-md-4">
                         <ol class="breadcrumb">
-                            <li><a ui-sref="test001">test001</a></li>
-                            <li><a ui-sref="test002.members">test002</a></li>
-                            <li class="active"><a href="#/cart">购物车</a></li>
+                            <li><a ui-sref="user.login">登录</a></li>
+                            <li><a ui-sref="user.register">注册</a></li>
+                            <li class="active"><a ui-sref="cart.myList">购物车</a></li>
                             <li><a href="#">自选提货地点</a></li>
                         </ol>
                         <ul class="nav nav-pills navbar-right">
-                            <li role="presentation" class="active"><a href="#/booking">开始订餐</a></li>
-                            <li role="presentation"><a href="#/cart">查看订单</a></li>
-                            <li role="presentation"><a href="#/helper">帮助中心</a></li>
+                            <li role="presentation" class="active"><a ui-sref="book.allfood">开始订餐</a></li>
+                            <li role="presentation"><a ui-sref="cart.myList">查看订单</a></li>
+                            <li role="presentation"><a ui-sref="helper.process">帮助中心</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +42,9 @@
         </div>
     </nav>
 
-    <div ui-view></div>
+    <div class="row">
+        <div ui-view></div>
+    </div>
 
 </div>
 
@@ -51,14 +53,15 @@
 
 <script src="framework/angular-1.3.14/angular.js"></script>
 <script src="framework/angular-ui-router.js"></script>
-<script src="test.js"></script>
+
 <script src="framework/bootstrap.min.js"></script>
 
 <script src="framework/bgpos.js"></script>
 <script src="framework/switch.picture.js"></script>
 <script src="framework/jquery.bubbleSlideshow.js"></script>
 
-
+<script src="js/app-route.js"></script>
+<script src="js/controllers.js"></script>
 
 </body>
 </html>

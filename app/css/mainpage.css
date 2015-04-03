@@ -43,11 +43,55 @@ html,body{margin:0px;padding:0px;width:100%;height:100%}
     width: 150px;
     height: 100px;
 }
+
+.food-pic{
+    height: 160px;
+}
+.food-container{
+    font-size:1px;
+}
+.food-name{
+    font-size:2px;
+    font-weight:bold;
+}
+.food-dicription{
+    color:red;
+}
+.price{
+    color:red;
+    font-size:2px;
+    font-weight: bold;
+}
+.login-main-disp{
+    height: 580px;
+}
 .panel-head-text{
     text-align:center;;
 }
 .panel-body-center{
     margin: 0 auto;
+}
+.must-input-flag{
+    color:red;
+}
+.register-head-01{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.register-head-02{
+    font-size: 1px;
+    margin-left: 10px;
+}
+.register-head-03{
+    font-size:1px;
+    text-decoration:none;
+}
+.register-head-04{
+    font-size:1px
+}
+.input-self-define{
+    height:35px !important;
 }
 #titleHome{
     text-decoration:none;
