@@ -1,5 +1,6 @@
 caiGe.service('foodService',function($q,$http){
     this.foods = [];
+    this.foodType = '';
 //    init();
 //    function init(){
 //        this.foods = $http.get("http://localhost:8080/app/asset/food.json")
@@ -27,6 +28,9 @@ caiGe.service('foodService',function($q,$http){
     };
 
     this.getTypeFood = function(type){
+        if(type == '' || type == undefined || type == null){
+            return this.foods;
+        }
         var sucai  = [];
         for(var j = 0; j<this.foods.length;j++){
             for(var i = 0; i<this.foods[j].type.length;i++){
@@ -46,7 +50,7 @@ caiGe.service('foodService',function($q,$http){
             foods = this.foods;
         }
 
-        var pageNum = Math.ceil($scope.foods.length/6);
+        var pageNum = Math.ceil(foods.length/6);
         for(var i = 1; i<=pageNum; i++){
             disp.push(i);
         }
@@ -56,9 +60,16 @@ caiGe.service('foodService',function($q,$http){
     this.getDispFoodArray = function(page,type){
         var foods = [],dispFoods = [];
         if(type){
-            foods = this.getTypeFood(type);
+            if(type == 'original'){
+                foods = this.getTypeFood(this.foodType);
+            }else{
+                foods = this.getTypeFood(type);
+                this.foodType = type;
+            }
+
         }else{
             foods = this.foods;
+            this.foodType = '';
         }
 
         for(var i = 0,count = 0; i<foods.length;i++){

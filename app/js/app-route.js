@@ -62,24 +62,30 @@ caiGe.config(function($stateProvider,$urlRouterProvider){
     $stateProvider
         .state('book',{
             url:'/book',
+            templateUrl:'tpls/book-page/book.html',
+            controller:['$scope','foodService',bookCtrl]
+        });
+});
+
+/*caiGe.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider
+        .state('book',{
+            url:'/book',
             templateUrl:'tpls/book-page/book-left-list.html'
         })
         .state('book.allfood',{
             url:'/allfood',
             views:{
                 'center@book':{
-                    templateUrl:'tpls/book-page/book-center-items.html'
+                    templateUrl:'tpls/book-page/book-center-items.html',
+                    controller:['$scope',function($scope){
+                        console.log('wocao');
+                    }]
                 },
-
                 'right@book':{
                     templateUrl:'tpls/book-page/book-right-lists.html'
                 }
-            }/*,
-            controller:['$scope',
-                function($scope){
-                    $scope.foods = [1,2.3,4,5,6];
-                }]*/
+            }
+        })
 
-
-        });
-});
+});*/

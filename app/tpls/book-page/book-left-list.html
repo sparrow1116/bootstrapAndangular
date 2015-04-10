@@ -1,14 +1,14 @@
 <div class="col-md-2">
     <div class="list-group" data-ng-controller="foodType">
-        <a data-ng-click="chooseFoodType(0)" class="list-group-item active">
+        <a ui-sref="book.allfood" data-ng-click="chooseFoodType()" class="list-group-item active">
             商品分类
         </a>
-        <a data-ng-click="chooseFoodType(1)" class="list-group-item">素菜</a>
-        <a data-ng-click="chooseFoodType(2)" class="list-group-item">荤菜</a>
-        <a data-ng-click="chooseFoodType(3)" class="list-group-item">肉菜</a>
-        <a data-ng-click="chooseFoodType(4)" class="list-group-item">汤羹</a>
-        <a data-ng-click="chooseFoodType(5)" class="list-group-item">套餐</a>
-        <a data-ng-click="chooseFoodType(6)" class="list-group-item">新品推荐</a>
+        <a ui-sref="book.sucai" data-ng-click="chooseFoodType(1)" class="list-group-item">素菜</a>
+        <a ui-sref="book.allfood" data-ng-click="chooseFoodType(2)" class="list-group-item">荤菜</a>
+        <a ui-sref="book.3" data-ng-click="chooseFoodType(3)" class="list-group-item">肉菜</a>
+        <a ui-sref="book.4" data-ng-click="chooseFoodType(4)" class="list-group-item">汤羹</a>
+        <a ui-sref="book.5" data-ng-click="chooseFoodType(5)" class="list-group-item">套餐</a>
+        <a ui-sref="book.6" data-ng-click="chooseFoodType(6)" class="list-group-item">新品推荐</a>
     </div>
 </div>
         <div ui-view="center"></div>
