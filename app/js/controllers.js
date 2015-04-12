@@ -68,7 +68,7 @@
 //});
 
 
-function bookCtrl($scope,foodService){
+function bookCtrl($scope,foodService,userChoseFood){
     var promise = foodService.getFoods();
     promise.then(function(data){
         $scope.foods = data;
@@ -122,6 +122,18 @@ function bookCtrl($scope,foodService){
 
     $scope.changePage = function(page){
         $scope.dispFoods = foodService.getDispFoodArray(page,'original');
+    };
+
+
+    $scope.choseFoods = userChoseFood.choseFoods;
+    
+
+    $scope.chooseFood = function(food){
+        userChoseFood.addToChose(food);
+    };
+
+    $scope.removeFood = function(food){
+        userChoseFood.removeFood(food);
     }
 
 }

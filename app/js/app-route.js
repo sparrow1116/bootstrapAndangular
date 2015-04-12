@@ -25,7 +25,7 @@ caiGe.config(function($stateProvider,$urlRouterProvider){
             templateUrl:'tpls/user-page/user-right-login.html'
         })
         .state('user.register',{
-            url:'/login',
+            url:'/register',
             templateUrl:'tpls/user-page/user-right-register.html'
         })
     ;
@@ -63,7 +63,7 @@ caiGe.config(function($stateProvider,$urlRouterProvider){
         .state('book',{
             url:'/book',
             templateUrl:'tpls/book-page/book.html',
-            controller:['$scope','foodService',bookCtrl]
+            controller:['$scope','foodService','userChoseFood',bookCtrl]
         });
 });
 

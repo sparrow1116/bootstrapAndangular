@@ -1,0 +1,22 @@
+[
+	{
+		"name":"zhangsan",
+		"password":"123456",
+		"sex":"male",
+		"email":"yj.zhang@samsung.com",
+		"tel":"13770644937"
+	},{
+		"name":"lisi",
+		"password":"123457",
+		"sex":"male",
+		"email":"yingjiez1@126.com",
+		"tel":"13721050038"
+	},{
+		"name":"wangerma",
+		"password":"123458",
+		"sex":"female",
+		"email":"yingjiez1@163.com",
+		"tel":"13776557366"
+	},
+
+]

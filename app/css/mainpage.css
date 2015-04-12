@@ -96,3 +96,7 @@ html,body{margin:0px;padding:0px;width:100%;height:100%}
 #titleHome{
     text-decoration:none;
 }
+#arrangeBlock{
+    margin-top: -17px;
+    margin-bottom: 5px;
+}

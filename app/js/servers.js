@@ -82,3 +82,32 @@ caiGe.service('foodService',function($q,$http){
     }
 
 });
+
+
+caiGe.service('userChoseFood',function(foodService){
+    this.choseFoods = [];
+    this.addToChose = function(food){
+        var hadChosed = false;
+        for(var i = 0; i<this.choseFoods.length;i++){
+            if (food.id == this.choseFoods[i].id) {
+                food.count++;
+                hadChosed = true;
+                break;
+            }
+        }
+        if(!hadChosed){
+            food.count = 1;
+            this.choseFoods.push(food);
+        }
+        
+    };
+
+    this.removeFood = function(food){
+        for(var i = 0; i<this.choseFoods.length;i++){
+            if(food.id == this.choseFoods[i].id){
+                this.choseFoods.splice(i,1);
+                break;
+            }
+        }
+    };
+});
